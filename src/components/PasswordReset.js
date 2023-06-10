@@ -7,7 +7,7 @@ const PasswordReset = () => {
     let [message,setMessage]=useState(false)
     const sendLink= async(e)=>{
         e.preventDefault( );
-        const res=await fetch('http://localhost:8081/sendpasswordlink',{
+        const res=await fetch('https://password-reset-vgrp.onrender.com/sendpasswordlink',{
           method:'POST',
           headers:{
             "Access-Control-Allow-Origin": true,

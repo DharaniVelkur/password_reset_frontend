@@ -19,7 +19,7 @@ function App() {
 
   const Dashboardvalid=async ()=>{
       let token=localStorage.getItem('usersdatatoken');
-      const res=await fetch('http://localhost:8081/validuser',{
+      const res=await fetch('https://password-reset-vgrp.onrender.com/validuser',{
           method:"GET",
           headers:{
               "Access-Control-Allow-Origin": true,

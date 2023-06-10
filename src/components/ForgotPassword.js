@@ -9,7 +9,7 @@ const ForgotPassword = () => {
 let [message,setMessage]=useState(false);
 
   const uservalid = async () => {
-    const response =await fetch(`http://localhost:8081/forgotpassword/${id}/${token}`, {
+    const response =await fetch(`https://password-reset-vgrp.onrender.com/forgotpassword/${id}/${token}`, {
       method: "GET",
       headers: {
         "Access-Control-Allow-Origin": true,
@@ -32,7 +32,7 @@ let [message,setMessage]=useState(false);
       toast.error("Password is required!!")
     }
     else{
-      const res=await fetch(`http://localhost:8081/${id}/${token}`,{
+      const res=await fetch(`https://password-reset-vgrp.onrender.com/${id}/${token}`,{
         method: "POST",
         headers: {
           "Access-Control-Allow-Origin": true,
